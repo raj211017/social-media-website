@@ -1,0 +1,266 @@
+
+    body{
+        background:linear-gradient(to right,rgb(255, 255, 255) 0%,rgba(203, 201, 216, 0.651) 40%,rgba(4, 86, 251, 0.826) 60%,#ff023d 100%);  
+       
+    }
+#main{
+    height:100%;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  width:90%;
+  display:flex;
+  margin-left: 50px;
+  margin-top:30px;
+  gap: 20px;
+  background-image:url("images/p1.png");
+  background-repeat: no-repeat;
+  }
+  #txt{
+    margin-top: 70px;
+  margin-left: 20px;
+  
+ }
+
+
+  #txt #logo2{
+  height:70px;
+  width:70px;
+  background-color: blue;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 1px 2px 5px 1px rgb(151, 149, 149);
+  margin-top: 250px;
+}
+#txt #logo2 img{height: 100%;
+width:100%;
+}
+#txt .a2{
+  font-size: 2vw;
+  color:rgba(0, 0, 0, 0.514);
+}
+#logo3{
+    height:18vw;
+    width: 350px;
+    margin-top: 50px;
+    
+}
+#logo3 img{
+  border-radius: 20px;
+  height:100%;
+    width:100%;
+    margin-top: 130px;
+}
+#form{
+    height:400px;
+    margin-left:20px;
+    color:whitesmoke;
+    box-shadow: 0px 0px 10px 1px rgb(49, 48, 48);
+    width:350px;
+    background-color:rgb(202, 228, 246) ;
+    border-radius: 20px;
+    border:solid rgb(177, 189, 216);
+    margin-top: 130px;
+}
+#form form{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:90%;
+  margin-top:50px;
+}
+#form input{
+    width:98%;
+    height:40px;
+    border-radius: 8px;
+    border:none;
+    color:black;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+}
+#form input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+#form a1{
+color: #000;
+}
+#form #lg{width:100%;
+  height:40px;
+background-color: green;
+color:white;
+border:none;
+border-radius: 20px;
+}
+#crt{
+width:90%;
+height:40px;
+margin-left:1vw;
+background-color: rgb(0, 11, 128);
+color:white;
+border:none;
+border-radius: 20px; 
+}
+::placeholder {
+  font-size:15px;
+}
+#form form a{font-size: 20px;
+font-weight:bold;}
+#form #lg:hover{background-color: rgb(10, 152, 10);}
+#crt:hover{background-color: rgb(51, 15, 192);}
+#txt{
+  width:32vw;
+  height:350px;
+  margin-top:50px;
+  text-align: center;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(23, 23, 23, 0.659); /* Black w/ opacity */
+  padding-top: 60px;
+}
+#formarea{
+  margin: 1px auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+ box-shadow: 1px 1px 10px 1px rgba(140, 137, 137, 0.749);
+  width:360px; /* Could be more or less, depending on screen size */
+  height:550px;
+  border-radius: 10px;
+  background-color:rgb(202, 228, 246) ;
+}
+
+.close {
+  float: right;
+  margin-right: 1.2vw;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+#text1{
+  color: #1b1b22;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+    
+}
+#form2{
+  margin:auto;
+  width:85%;
+  margin-top:30px;
+}
+#form2 input{
+  width:92%;
+  height:35px;
+  border-radius: 8px;
+    border:none;
+    color:black;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255); 
+}
+#form2 input[type='radio']{
+  width:20px;
+  height:20px;
+}
+#form2 a{
+  font-size: 18px;
+}
+#form2 #sbmt{
+  width:95%;
+  background-color: #ff023d;
+  color: white;
+}
+#form2 #sbmt:hover{
+  
+  background-color: #037f17;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+/* when size of screen is small then design will change*/
+
+
+@media only screen and (max-width: 900px) {
+    #main{
+      
+    height:900px;
+    display: grid;
+  grid-template-columns: auto;
+  width:65%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #logo3{
+    height:30vw;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:35vw;
+    
+} 
+#txt h2{font-size: 8vw;}
+  #form{
+    height:350px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#form a1{float:left;}
+#form #lg{width:100%;
+  height: 35px;
+
+}
+#crt{
+  width:90%;
+  height:35px;
+  }
+#txt{
+  margin-top: 1px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:100px;
+  width:100%;
+}
+#txt #logo2{margin-top: 25px;}
+#txt .a1{font-size: 5vw;
+font-weight: bolder;}
+#txt .a2{font-size: 3vw;
+font-weight: bold;
+}
+
+}
+  
+    

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login_ConnectMe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="logincss.css">
+        <script src="loginpagejs.js"></script>
+    </head>
+    
+    <body>
+      <div id="body1"></div>
+        <div id="main"> 
+           
+          <div id="txt">
+            <div id="logo2"><img src="images/minilogo1.png"></div>
+            <a class="a2">Helloship helps you connect and share with the people in your life.</a>
+          </div>
+        
+        <div id="logo3">
+          <img src="images/logo2.png">  
+        </div>
+        <div id="form">
+            <form action="loginphp.php" method="post">
+                <input type="text" placeholder=" User Name or Email Id" name="username" required><br><br>
+                <input type="password" placeholder=" Password" id="pswd" name="password" required><br><br>
+                <input type="checkbox" onclick="myFunction()"><a1>Show Password</a1><br><br>
+                <input id="lg" type="submit" name="login" value="Login">
+            </form>
+            <br>
+            <hr>
+            <button onclick="document.getElementById('id01').style.display='block'"  id="crt"><a>Create New Account</a></button>
+        </div>  
+    </div>
+
+    <div id="id01" class="modal">
+        <div id="formarea" class="animate">
+          <div class="close">
+            <span onclick="document.getElementById('id01').style.display='none'"  title="Close Modal">&times;</span>
+          </div>
+        <div id="form2">
+            <div id="text1">Sign Up</div><hr>
+            <form action="loginphp.php" method="post">
+            <input placeholder="First Name" name="fname" required><br><br>
+            <input placeholder="Last Name" name="lname" required><br><br>
+            <input type="email" placeholder="Email id" name="email" required><br><br>
+            <input type="tel" placeholder="Mobile No." name="number" pattern="[0-9]{10}" required><br><br>
+            <input type="date" placeholder="Date of Birth" name="dob" required><br><br>
+            <a>Gender:</a>
+            <input  type="radio" name="gender" name="male" required><a>Male</a>
+            <input  type="radio" name="gender" name="female" required><a>Female</a>
+            <input  type="radio" name="gender" name="other" required><a>Other</a><br><br>
+            <input placeholder="username" name="username" required><br><br>
+            <input placeholder="Password" type="password" minlength="8" name="password" required><br><br>
+            <input id="sbmt" type="submit"  name="signup" value="Sign up">
+        </form>
+        </div>
+            </div>
+      </div>
+      
+      
+    </body>
+</html>
